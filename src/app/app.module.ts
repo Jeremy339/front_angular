@@ -18,6 +18,7 @@ import { ImageModule } from 'primeng/image';
 import { GalleriaModule } from 'primeng/galleria';
 import { CarrusellComponent } from './components/carrusell/carrusell.component';
 import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 //servicios Internos
 import { CarrusellService } from './service/carrusell/carrusell.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -52,7 +53,8 @@ import { CardModule } from 'primeng/card';
     MessagesModule,
     HttpClientModule,
     CarouselModule,
-    CardModule
+    CardModule,
+    MessageModule
   ],
   providers: [CarrusellService],
   bootstrap: [AppComponent]

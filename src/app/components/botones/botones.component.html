@@ -1,16 +1,20 @@
 <p>botones works!</p>
 
-<h1>
-  <p-button label="Primary" [raised]="true" />
-<p-button label="Secondary" [raised]="true" severity="secondary" [disabled]="true"/>
-<p-button label="Success" [raised]="true" severity="success" />
-<p-button label="Info" [raised]="true" severity="info" />
-<p-button label="Warning" [raised]="true" severity="warning" />
-<p-button label="Help" [raised]="true" severity="help" />
-<p-button label="Danger" [raised]="true" severity="danger" />
-<p-button label="Contrast" [raised]="true" severity="contrast" />
-</h1>
-
+<div>
+    <h1>
+      <p-button label="Primary" [raised]="true" (click)="showMessage('Primary')"></p-button>
+      <p-button label="Secondary" [raised]="true" severity="secondary" (click)="showMessage('Secondary')"></p-button>
+      <p-button label="Success" [raised]="true" severity="success" (click)="showMessage('Success')"></p-button>
+      <p-button label="Info" [raised]="true" severity="info" (click)="showMessage('Info')"></p-button>
+      <p-button label="Warning" [raised]="true" severity="warning" (click)="showMessage('Warning')"></p-button>
+      <p-button label="Help" [raised]="true" severity="help" (click)="showMessage('Help')"></p-button>
+      <p-button label="Danger" [raised]="true" severity="danger" (click)="showMessage('Danger')"></p-button>
+      <p-button label="Contrast" [raised]="true" severity="contrast" (click)="showMessage('Contrast')"></p-button>
+    </h1>
+  
+    <p-messages [(value)]="messages"></p-messages>
+  </div>
+  
 <h1>
   <div class="card flex flex-wrap gap-3 justify-content-center">
     <p-button label="Primary" [text]="true" [raised]="true" />
